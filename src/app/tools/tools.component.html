@@ -1,0 +1,25 @@
+<h1> Simple Claculate</h1>
+<div class="container-md">
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <tr>
+                    <td> Enter First Number</td>
+                    <td><input type="number" name="fnum" [(ngModel)]="fnum"></td>
+                </tr>
+                <tr>
+                    <td> Enter Second Number</td>
+                    <td><input type="number" name="snum" [(ngModel)]="snum"></td>
+                </tr>
+                <tr>
+                    <td> Enter Operation</td>
+                    <td><input type="text" name="ope" [(ngModel)]="ope"></td>
+                </tr>
+            </table>
+            
+            <button type="button" (click)="cal()" class="btn btn-primary">Calculate</button>
+            <h1> The reseult is :{{result}}</h1>
+
+        </div>
+    </div>
+</div>
